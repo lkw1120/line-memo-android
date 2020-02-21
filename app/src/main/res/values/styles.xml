@@ -6,15 +6,68 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-    </style>
 
-    <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+
+        <item name="android:windowAnimationStyle">@null</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="itemMemoTitleStyle">
+        <item name="android:layout_marginStart">@dimen/item_memo_text_margin_width</item>
+        <item name="android:layout_marginEnd">@dimen/item_memo_text_margin_width</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/item_memo_title_size</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:hint">@string/item_memo_title_is_empty</item>
+    </style>
+
+    <style name="itemMemoMessageStyle">
+        <item name="android:layout_marginStart">@dimen/item_memo_text_margin_width</item>
+        <item name="android:layout_marginEnd">@dimen/item_memo_text_margin_width</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/item_memo_message_size</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:hint">@string/item_memo_message_is_empty</item>
+    </style>
+
+    <style name="memoTitleStyle">
+        <item name="android:layout_marginStart">@dimen/content_memo_margin_width</item>
+        <item name="android:layout_marginEnd">@dimen/content_memo_margin_width</item>
+        <item name="android:layout_marginTop">@dimen/content_memo_margin_height</item>
+        <item name="android:layout_marginBottom">@dimen/content_memo_margin_height</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/content_memo_title_size</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:hint">@string/memo_title_hint</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="memoMessageStyle">
+        <item name="android:layout_marginStart">@dimen/content_memo_margin_width</item>
+        <item name="android:layout_marginEnd">@dimen/content_memo_margin_width</item>
+        <item name="android:layout_marginTop">@dimen/content_memo_margin_height</item>
+        <item name="android:layout_marginBottom">@dimen/content_memo_margin_height</item>
+        <item name="android:textSize">@dimen/content_memo_message_size</item>
+        <item name="android:background">@null</item>
+        <item name="android:hint">@string/memo_message_hint</item>
+        <item name="android:gravity">start|top</item>
+        <item name="android:inputType">textMultiLine</item>
+    </style>
+
+    <style name="splitHorizontalBar">
+        <item name="android:layout_marginStart">@dimen/split_bar_margin_width</item>
+        <item name="android:layout_marginEnd">@dimen/split_bar_margin_width</item>
+        <item name="android:background">@color/split_bar_color</item>
+    </style>
 
 </resources>

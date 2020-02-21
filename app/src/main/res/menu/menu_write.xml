@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.lkw1120.memo.ui.WriteActivity">
+    <item
+        android:id="@+id/action_capture_camera"
+        android:orderInCategory="100"
+        android:title="@string/write_menu_action_capture_camera"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_pick_album"
+        android:orderInCategory="100"
+        android:title="@string/write_menu_action_pick_album"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_link_web"
+        android:orderInCategory="100"
+        android:title="@string/write_menu_action_link_web"
+        app:showAsAction="never" />
+</menu>

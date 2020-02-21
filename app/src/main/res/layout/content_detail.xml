@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="vm"
+            type="com.lkw1120.memo.viewmodel.DetailViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.DetailActivity"
+        tools:showIn="@layout/activity_detail">
+
+        <include
+            layout="@layout/list_image"
+            android:id="@+id/image_list"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/memo_title" />
+
+        <TextView
+            style="@style/memoTitleStyle"
+            android:id="@+id/memo_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{vm.memo.title}"
+            app:layout_constraintTop_toBottomOf="@id/image_list"
+            app:layout_constraintBottom_toTopOf="@id/split_horizontal_bar"/>
+
+        <View
+            style="@style/splitHorizontalBar"
+            android:id="@+id/split_horizontal_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/split_bar_height"
+            app:layout_constraintTop_toBottomOf="@id/memo_title"
+            app:layout_constraintBottom_toTopOf="@id/memo_message"/>
+
+        <TextView
+            style="@style/memoMessageStyle"
+            android:id="@+id/memo_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{vm.memo.message}"
+            app:layout_constraintTop_toBottomOf="@id/split_horizontal_bar"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+
