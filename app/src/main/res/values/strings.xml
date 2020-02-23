@@ -26,7 +26,7 @@
     <string name="list_image_is_empty">사진이 없습니다.</string>
     <string name="list_memo_is_empty">메모가 없습니다.</string>
 
-    <string name="url_is_invalid">잘못된 주소입니다.</string>
+    <string name="url_is_invalid">주소가 잘못되었습니다.</string>
 
     <string name="storage_permission_alert">이미지가 보이지 않을 수 있습니다.</string>
 

@@ -159,10 +159,15 @@ class WriteActivity : AppCompatActivity() {
             val button = dialog.getButton(AlertDialog.BUTTON_POSITIVE)
             button.setOnClickListener {
                 val imageSrc = editText.text.toString()
-                val image = Image()
-                image.src = imageSrc
-                viewModel.addImage(image)
-                dialog.dismiss()
+                if(ImageUtils.isImage(this@WriteActivity,imageSrc)) {
+                    val image = Image()
+                    image.src = imageSrc
+                    viewModel.addImage(image)
+                    dialog.dismiss()
+                }
+                else {
+                    Toast.makeText(this@WriteActivity, resources.getString(R.string.url_is_invalid), Toast.LENGTH_LONG).show()
+                }
             }
         }
         dialog.show()
