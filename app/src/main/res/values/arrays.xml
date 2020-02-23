@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="image_filter">
+        <item>jpg</item>
+        <item>jpeg</item>
+        <item>png</item>
+        <item>gif</item>
+        <item>bmp</item>
+    </string-array>
+</resources>

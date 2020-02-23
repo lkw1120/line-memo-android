@@ -6,32 +6,40 @@
     <data>
         <variable
             name="vm"
-            type="com.lkw1120.memo.viewmodel.MainViewModel" />
+            type="com.lkw1120.memo.viewmodel.WriteViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:id="@+id/main_activity_layout"
+        android:id="@+id/write_activity_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@android:color/white"
-        tools:context=".ui.MainActivity">
+        tools:context=".ui.WriteActivity">
 
         <include
             layout="@layout/header_layout"
-            android:id="@+id/header_main" />
+            android:id="@+id/header_write"
+            app:memo="@{vm.memo}" />
 
-        <include
-            layout="@layout/content_main"
-            android:id="@+id/content_main"
-            app:vm="@{vm}" />
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <include
+                layout="@layout/content_write"
+                android:id="@+id/content_write"
+                app:vm="@{vm}" />
+
+        </androidx.core.widget.NestedScrollView>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/write_fab"
+            android:id="@+id/submit_fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_margin="@dimen/fab_margin"
-            app:srcCompat="@drawable/ic_edit_24px" />
+            app:srcCompat="@drawable/ic_done_24px" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>

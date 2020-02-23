@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="item"
+            type="com.lkw1120.memo.datasource.entity.Memo" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/item_memo_padding"
+        android:background="?android:attr/selectableItemBackground">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/item_thumbnail"
+            android:layout_width="@dimen/item_memo_thumbnail_width"
+            android:layout_height="@dimen/item_memo_thumbnail_height"
+            app:cardCornerRadius="@dimen/item_memo_thumbnail_radius"
+            app:cardElevation="@dimen/item_memo_thumbnail_elevation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                thumbnail="@{item.thumbnail}"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            style="@style/itemMemoTitleStyle"
+            android:id="@+id/item_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{item.title}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/item_thumbnail"/>
+
+        <TextView
+            style="@style/itemMemoMessageStyle"
+            android:id="@+id/item_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{item.message}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/item_thumbnail"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
