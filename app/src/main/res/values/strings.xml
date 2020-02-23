@@ -1,10 +1,8 @@
 <resources>
     <string name="app_name">메모장</string>
 
-
     <string name="main_title">메모장</string>
-    <string name="modify_title">수정하기</string>
-    <string name="create_title">새로만들기</string>
+    <string name="write_title">편집하기</string>
 
     <string name="memo_title_hint">제목</string>
     <string name="memo_message_hint">내용</string>
@@ -21,8 +19,15 @@
     <string name="item_memo_title_is_empty">제목 없음</string>
     <string name="item_memo_message_is_empty">내용 없음</string>
 
+
+    <string name="dialog_title_add_web_image">웹이미지 넣기</string>
+    <string name="dialog_message_add_web_image">링크를 삽입해주세요.</string>
+
     <string name="list_image_is_empty">사진이 없습니다.</string>
     <string name="list_memo_is_empty">메모가 없습니다.</string>
 
+    <string name="url_is_invalid">잘못된 주소입니다.</string>
+
     <string name="storage_permission_alert">이미지가 보이지 않을 수 있습니다.</string>
+
 </resources>

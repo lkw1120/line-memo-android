@@ -12,14 +12,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/item_memo_padding"
-        android:background="@android:color/white">
+        android:background="?android:attr/selectableItemBackground">
         <androidx.cardview.widget.CardView
             android:id="@+id/item_thumbnail"
             android:layout_width="@dimen/item_memo_thumbnail_width"
             android:layout_height="@dimen/item_memo_thumbnail_height"
             app:cardCornerRadius="@dimen/item_memo_thumbnail_radius"
             app:cardElevation="@dimen/item_memo_thumbnail_elevation"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent">
 
@@ -36,10 +36,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@{item.title}"
-            app:layout_constraintStart_toEndOf="@id/item_thumbnail"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/item_message"
-            app:layout_constraintEnd_toStartOf="@id/item_arrow"/>
+            app:layout_constraintEnd_toStartOf="@id/item_thumbnail"/>
 
         <TextView
             style="@style/itemMemoMessageStyle"
@@ -47,18 +46,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@{item.message}"
-            app:layout_constraintTop_toBottomOf="@id/item_title"
-            app:layout_constraintStart_toEndOf="@id/item_thumbnail"
-            app:layout_constraintEnd_toStartOf="@id/item_arrow"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/item_thumbnail"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
-        <ImageView
-            android:id="@+id/item_arrow"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:src="@drawable/ic_keyboard_arrow_right_24px"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

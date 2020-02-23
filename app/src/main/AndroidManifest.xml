@@ -16,6 +16,7 @@
         <activity
             android:name=".ui.DetailActivity" />
         <activity
+            android:label="@string/write_title"
             android:name=".ui.WriteActivity" />
         <activity
             android:name=".ui.MainActivity"

@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import com.lkw1120.memo.R
@@ -49,7 +48,6 @@ class MainActivity : AppCompatActivity() {
 
             writeFab.setOnClickListener {
                 val intent = Intent(this@MainActivity, WriteActivity::class.java)
-                Toast.makeText(this@MainActivity, "새로만들기", Toast.LENGTH_LONG).show()
                 intent.putExtra("create", MemoWithImages())
                 startActivity(intent)
             }

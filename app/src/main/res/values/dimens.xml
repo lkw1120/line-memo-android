@@ -21,6 +21,7 @@
     <dimen name="item_memo_margin_width">0dp</dimen>
     <dimen name="item_memo_margin_height">2dp</dimen>
     <dimen name="item_memo_text_margin_width">10dp</dimen>
+    <dimen name="item_memo_text_margin_height">5dp</dimen>
 
     <dimen name="item_memo_thumbnail_width">70dp</dimen>
     <dimen name="item_memo_thumbnail_height">70dp</dimen>
@@ -28,8 +29,8 @@
     <dimen name="item_memo_thumbnail_radius">8dp</dimen>
     <dimen name="item_memo_thumbnail_elevation">0dp</dimen>
 
-    <dimen name="item_memo_title_size">18dp</dimen>
-    <dimen name="item_memo_message_size">15dp</dimen>
+    <dimen name="item_memo_title_size">21dp</dimen>
+    <dimen name="item_memo_message_size">18dp</dimen>
 
     <!-- item_image -->
     <dimen name="item_image_width">0dp</dimen>

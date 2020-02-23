@@ -21,6 +21,7 @@
     <style name="itemMemoTitleStyle">
         <item name="android:layout_marginStart">@dimen/item_memo_text_margin_width</item>
         <item name="android:layout_marginEnd">@dimen/item_memo_text_margin_width</item>
+        <item name="android:layout_marginTop">@dimen/item_memo_text_margin_height</item>
         <item name="android:textStyle">normal</item>
         <item name="android:textSize">@dimen/item_memo_title_size</item>
         <item name="android:ellipsize">end</item>
@@ -31,6 +32,7 @@
     <style name="itemMemoMessageStyle">
         <item name="android:layout_marginStart">@dimen/item_memo_text_margin_width</item>
         <item name="android:layout_marginEnd">@dimen/item_memo_text_margin_width</item>
+        <item name="android:layout_marginBottom">@dimen/item_memo_text_margin_height</item>
         <item name="android:textStyle">normal</item>
         <item name="android:textSize">@dimen/item_memo_message_size</item>
         <item name="android:ellipsize">end</item>

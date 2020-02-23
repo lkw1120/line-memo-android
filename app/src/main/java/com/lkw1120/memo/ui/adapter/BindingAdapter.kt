@@ -14,6 +14,7 @@ fun setThumbnail(view: ImageView, url: String?) {
     Glide.with(view.context)
         .load(url)
         .centerCrop()
+        .thumbnail(0.1f)
         .error(R.drawable.ic_photo_24px)
         .into(view)
 }
@@ -22,7 +23,7 @@ fun setThumbnail(view: ImageView, url: String?) {
 fun setImage(view: ImageView, url: String?) {
     Glide.with(view.context)
         .load(url)
-        //.centerCrop()
-        //.error(R.drawable.ic_add_a_photo_24px)
+        .fitCenter()
+        .error(R.drawable.ic_photo_24px)
         .into(view)
 }
