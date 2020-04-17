@@ -1,4 +1,4 @@
-# [라인 Android 앱 과제](https://programmers.co.kr/competitions/139/2020-line-recruitment)
+# 라인 Android 앱 과제
 
 이미지 첨부 기능을 가진 메모장 어플리케이션
 
