@@ -6,6 +6,10 @@
 
 20년 02월 10일 10:00 ~ 02월 24일 14:00
 
+### 결과
+
+[https://programmers.co.kr/assignments/12628/review_report](https://programmers.co.kr/assignments/12628/review_report)
+
 ### 스크린샷
 
 <img src="https://github.com/lkw1120/line-memo-android/blob/master/assets/images/Screenshot_2020-02-24-03-38-42.png" width="30%"><img src="https://github.com/lkw1120/line-memo-android/blob/master/assets/images/Screenshot_2020-02-24-03-38-58.png" width="30%"><img src="https://github.com/lkw1120/line-memo-android/blob/master/assets/images/Screenshot_2020-02-24-03-39-30.png" width="30%">
